@@ -5,6 +5,10 @@ var cors = require('cors')
 const connectDB = require('./config/db');
 var app = express();
 const todo = require('./routes/todo');
+  
+
+
+
 
 connectDB();
 app.use(cors({origin: true, credentials: true}));
